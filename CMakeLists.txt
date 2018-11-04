@@ -51,3 +51,9 @@ add_dependencies(lambdas_and_closures functional_plus)
 
 add_executable(sql_analogy src/sql_analogy.cpp)
 add_dependencies(sql_analogy functional_plus)
+
+add_executable(composition src/composition.cpp)
+add_dependencies(composition functional_plus)
+
+add_executable(function_composition_exercice src/function_composition_exercice.cpp)
+add_dependencies(function_composition_exercice functional_plus)
