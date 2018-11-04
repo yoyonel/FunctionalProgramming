@@ -127,7 +127,7 @@ double timer_on(F f, const vector<T> &xs)
     return stopwatch.elapsed();
 }
 
-int main()
+int main(int argc, char *argv[])
 {
     Ints xs(1 << 13);
 
@@ -138,4 +138,6 @@ int main()
     cout << "std transform: " << timer_on(square_vec_std_transform, xs) << " s" << endl;
     cout << "transform vec: " << timer_on(square_vec_transform_vec, xs) << " s" << endl;
     cout << "fplus transform: " << timer_on(square_vec_fplus_transform, xs) << " s" << endl;
+
+    return 0;
 }

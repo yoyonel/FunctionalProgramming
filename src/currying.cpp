@@ -26,7 +26,7 @@ bool is_even(int x)
     return x % 2 == 0;
 }
 
-int main(int argc, char const *argv[])
+int main()
 {
     using namespace std;
 
@@ -56,7 +56,9 @@ int main(int argc, char const *argv[])
     cout << "Keep even from xss(= " << fplus::show(xss) << ") = " << fplus::show(xss_even) << endl;
 
     // Square the numbers in container xss
-    const auto &xss_square = fplus::transform(fplus::fwd::transform(fplus::square<int>), xss);
+    const auto &xss_square = fplus::transform(
+                fplus::fwd::transform(fplus::square<int>),
+                xss);
     cout << "Square(xss) = " << fplus::show(xss_square) << endl;
 
     // a + b + c + d

@@ -1,6 +1,6 @@
 #include <fplus/fplus.hpp>
 
-int main(int argc, char const *argv[])
+int main()
 {
     const int a = 3;
 

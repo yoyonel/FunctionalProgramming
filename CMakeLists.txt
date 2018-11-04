@@ -48,3 +48,6 @@ add_dependencies(Correctness_follows_from_expressiveness functional_plus)
 
 add_executable(lambdas_and_closures src/lambdas_and_closures.cpp)
 add_dependencies(lambdas_and_closures functional_plus)
+
+add_executable(sql_analogy src/sql_analogy.cpp)
+add_dependencies(sql_analogy functional_plus)
