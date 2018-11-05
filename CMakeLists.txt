@@ -66,3 +66,15 @@ add_dependencies(composition functional_plus)
 
 add_executable(function_composition_exercice src/function_composition_exercice.cpp)
 add_dependencies(function_composition_exercice functional_plus)
+
+add_executable(cli1 src/cli1.cpp)
+add_dependencies(cli1 functional_plus)
+
+add_executable(cli2 src/cli2.cpp)
+add_dependencies(cli2 functional_plus)
+
+add_executable(cli src/cli.cpp)
+add_dependencies(cli functional_plus)
+
+add_executable(cli_with_compose src/cli_with_compose.cpp)
+add_dependencies(cli_with_compose functional_plus)

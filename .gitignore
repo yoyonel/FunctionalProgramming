@@ -1,4 +1,10 @@
 #
+with_cget/
+
+# TODO: replace by makefile
+build_*.sh
+
+#
 CMakeLists.txt.user
 
 #

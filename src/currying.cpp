@@ -72,6 +72,7 @@ int main()
         };
     };
     assert(add_four_curried(1)(2)(3)(4) == 1 + 2 + 3 + 4);
+    cout << "add_four_curried(1)(2)(3)(4) = " << add_four_curried(1)(2)(3)(4) << endl;
 
     return 0;
 }
