@@ -120,7 +120,7 @@ template <typename F, typename T>
 double timer_on(F f, const vector<T> &xs)
 {
     Timer stopwatch;
-    for (int i = 0; i < 1 << 16; i++)
+    for (unsigned int i = 0; i < 1 << 16; i++)
     {
         f(xs);
     }

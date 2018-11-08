@@ -57,8 +57,8 @@ int main()
 
     // Square the numbers in container xss
     const auto &xss_square = fplus::transform(
-                fplus::fwd::transform(fplus::square<int>),
-                xss);
+            fplus::fwd::transform(fplus::square<int>),
+            xss);
     cout << "Square(xss) = " << fplus::show(xss_square) << endl;
 
     // a + b + c + d

@@ -2,7 +2,7 @@
 
 double str_to_double(const std::string& str)
 {
-    double result;
+    double result = NAN;
     std::istringstream(str) >> result;
     return result;
 }
